@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <!-- Google Fonts -->
+    <link rel="icon" href="path-to-your-favicon.ico" type="image/x-icon">
+
 
 </head>
 <body>
@@ -76,36 +78,41 @@
         
        <div class="col-md-6 right-box " style="background-color: #f9f9f9;">
           <div class="row align-items-center">
+
+            <form  id="login-form" >
                 <div class="header-text mb-4">
                      <h2>Welcome to <span style="color: #6abf64; font-weight: bold;">Kerala Unvield!</span></h2>
                      <p>We are happy to see you here.</p>
                 </div>
-
+                <!-- Name -->
                 <div class="input-group mb-3">
                     <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Your Name" required>
                 </div>
-
+                <!-- phone -->
                 <div class="input-group mb-3">
-                    <input type="tel" class="form-control form-control-lg bg-light fs-6" placeholder="Contact Number" required>
+                    <input type="tel" class="form-control form-control-lg bg-light fs-6" id="phone" placeholder="Contact Number" required>
+                </div>
+                <!-- email -->
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control form-control-lg bg-light fs-6" id="email" placeholder="Email address" required>
+                </div>
+                <!-- password -->
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control form-control-lg bg-light fs-6" id="password" placeholder="Password" required>
                 </div>
 
                 <div class="input-group mb-3">
-                    <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email address" required>
+                    <input type="password" class="form-control form-control-lg bg-light fs-6" id="confirm-password" placeholder="Confirm your password" required>
                 </div>
-
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
+                    
+                <div>
+                  <label for="error" id="error"></label>
                 </div>
-
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Confirm your password" required>
-                </div>
-
                 
                 <div class="input-group mb-3">
-                    <button class="btn btn-lg btn-success w-100 fs-6">Register</button>
+                    <button class="btn btn-lg btn-success w-100 fs-6" type="submit" >Register</button>
                 </div>
-                
+              </form>    
                 
           </div>
        </div> 
@@ -115,6 +122,6 @@
     <!-- Main container ends -->
 
 
-    
+    <script src="signup.js"></script>
 </body>
 </html>
